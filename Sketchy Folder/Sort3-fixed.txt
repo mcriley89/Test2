@@ -1,0 +1,43 @@
+import java.util.*;
+public class Aplpha {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		
+		for(int i = 3; i >= 0; i--){
+		System.out.print("Enter three integers: ");
+	    int a = input.nextInt();
+	    int b = input.nextInt();
+	    int c = input.nextInt();
+		
+	    System.out.println();
+	    sort(a, b, c);}
+		System.out.println("Good Job! (I'm talking to the computer. It sorted the numbers, while all you did was input the numbers.)");
+	}
+	
+		public static void sort(int number1, int number2, int number3){
+		
+	    if (number1 > number2) {
+	      int temp = number1;
+	      number1 = number2;
+	      number2 = temp;
+	      
+	    }
+
+	    if (number2 > number3) {
+	      int temp = number2;
+	      number2 = number3;
+	      number3 = temp;
+	    }
+
+	    if (number1 > number2) {
+	      int temp = number1;
+	      number1 = number2;
+	      number2 = temp;
+	    }
+		
+	    System.out.println("The sorted numbers are: " + number1 + " " + number2 + " " + number3);
+	    System.out.println();
+		}
+		}
